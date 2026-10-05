@@ -38,7 +38,7 @@ A Veil jar from anywhere else may be modified and could steal your account.
 - **HUD:** FPS, CPS, Coordinates, Keystrokes, Armor Status, Low Durability warning, Saturation, Hotbar Tweaks,
   Potion Status, Item Counter, Compass, Combo, Reach, Speed, Memory, Pack Display, Ping, Server Address, Clock,
   Session Stats (kills, finals, beds and wins), Generator Timers (Bedwars), Scoreboard, Boss Bar, Titles,
-  Tab Ping, Screenshot Helper
+  Tab Ping, Bedwars Stats (see below), Screenshot Helper
 - **Player:** Toggle Sprint, Nick Hider, Own Nametag (F5), Cape (only you can see it), Requeue key, Quick Play
   menu (Hypixel), Discord Presence (Windows)
 - **Chat:** Name Mentions, Timestamps, Compact Chat, Chat Tweaks, Chat Tabs (All, Party, Guild, PMs), Auto GG
@@ -46,6 +46,17 @@ A Veil jar from anywhere else may be modified and could steal your account.
 - **Render:** Zoom, Custom Crosshair, 1.7 Animations, Block Outline, Hit Color, Hitboxes, Item Physics,
   Enchant Glint, No Hurt Cam, Motion Blur, Particles, Menu Blur, Menu Music, Performance
 - A custom red-and-black main menu and menu backgrounds
+
+### Bedwars Stats and your Hypixel API key
+
+Bedwars Stats shows stars, FKDR and WLR next to names in the tab list on Hypixel. It needs **your own** API key
+from [developer.hypixel.net](https://developer.hypixel.net), which requires a Minecraft account linked to Hypixel.
+
+**Use it at your own risk.** Hypixel's rules say development keys are meant for your own projects, so Hypixel may
+revoke a key used in a mod like this. Only your key is affected, not your Minecraft or Hypixel account. Never share
+your key with anyone, and nobody from Veil will ever ask for it.
+
+### Server rules
 
 Each server has its own rules about which mods are allowed. Veil only includes fair-play features, but it is up to
 you to follow the rules of the servers you play on.
