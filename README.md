@@ -2,6 +2,8 @@
 
 A Minecraft **1.8.9 PvP client** (Forge mod) made for **Bedwars** and **Skywars**, by Teri.
 
+**NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.**
+
 Fair-play only: no cheats, nothing that gives an unfair advantage, and the client never sends anything to the
 server on its own. Everything it adds is visual or happens on your screen.
 
@@ -64,7 +66,8 @@ you to follow the rules of the servers you play on.
 ## Bugs and ideas
 
 Found a bug or have an idea? Open an [issue](https://github.com/TheDarkTeri/Veil-Client-Releases/issues). For a
-crash, attach the crash report from `.minecraft/crash-reports`.
+crash, attach the crash report from `.minecraft/crash-reports`. For anything else, email
+[thedarkteriyt@gmail.com](mailto:thedarkteriyt@gmail.com).
 
 ## License
 
@@ -72,4 +75,6 @@ Copyright (c) 2026 TheDarkTeri. All rights reserved. You may download official r
 play. Copying, modifying, re-uploading or redistributing Veil Client needs written permission. See
 [LICENSE](LICENSE).
 
-Veil Client is not affiliated with or endorsed by Mojang Studios, Microsoft, Hypixel or Discord.
+Veil Client is made and maintained by TheDarkTeri, who is responsible for it
+([thedarkteriyt@gmail.com](mailto:thedarkteriyt@gmail.com)). It is not affiliated with or endorsed by Mojang Studios,
+Microsoft, Hypixel or Discord.
