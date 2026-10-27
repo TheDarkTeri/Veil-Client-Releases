@@ -7,9 +7,18 @@ A Minecraft **1.8.9 PvP client** (Forge mod) made for **Bedwars** and **Skywars*
 Fair-play only: no cheats, nothing that gives an unfair advantage, and the client never sends anything to the
 server on its own. Everything it adds is visual or happens on your screen.
 
-**[Download the latest release](https://github.com/TheDarkTeri/Veil-Client-Releases/releases/latest)**
+## Easiest way: use the Veil Client launcher
 
-## Installing
+The [Veil Client launcher](https://github.com/TheDarkTeri/Veil-Client-Launcher-Releases) installs Java 8, Minecraft
+1.8.9, Forge and Veil for you and keeps Veil updated: install it, sign in with Microsoft and press **Play**. Needs
+Windows 10 or 11, 64-bit.
+
+**[Download the launcher](https://github.com/TheDarkTeri/Veil-Client-Launcher-Releases/releases/latest)**
+
+## Installing the mod yourself
+
+Prefer your own launcher? **[Download the latest mod jar](https://github.com/TheDarkTeri/Veil-Client-Releases/releases/latest)**,
+then:
 
 1. Install **Forge 1.8.9** (11.15.1.2318 recommended) and launch it once.
 2. Download `veil_client-<version>.jar` from [Releases](https://github.com/TheDarkTeri/Veil-Client-Releases/releases).
