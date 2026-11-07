@@ -50,8 +50,8 @@ A Veil jar from anywhere else may be modified and could steal your account.
   Potion Status, Item Counter, Compass, Combo, Reach, Speed, Memory, Pack Display, Ping, Server Address, Clock,
   Session Stats (kills, finals, beds and wins), Generator Timers (Bedwars), Scoreboard, Boss Bar, Titles,
   Tab Ping, Bedwars Stats (see below), Screenshot Helper
-- **Player:** Toggle Sprint, Nick Hider, Own Nametag (F5), Cape (only you can see it), Requeue key, Quick Play
-  menu (Hypixel), Discord Presence (Windows)
+- **Player:** Toggle Sprint, Nick Hider, Own Nametag (F5), Cape (other Veil players see it too, see below),
+  Requeue key, Quick Play menu (Hypixel), Discord Presence (Windows)
 - **Chat:** Name Mentions, Timestamps, Compact Chat, Chat Tweaks, Chat Tabs (All, Party, Guild, PMs), Auto GG
 - **World:** Fullbright, Time Changer, Weather Changer, Waypoints
 - **Render:** Zoom, Custom Crosshair, 1.7 Animations, Block Outline, Hit Color, Hitboxes, Item Physics,
@@ -66,6 +66,25 @@ from [developer.hypixel.net](https://developer.hypixel.net), which requires a Mi
 **Use it at your own risk.** Hypixel's rules say development keys are meant for your own projects, so Hypixel may
 revoke a key used in a mod like this. Only your key is affected, not your Minecraft or Hypixel account. Never share
 your key with anyone, and nobody from Veil will ever ask for it.
+
+### Shared capes and your data
+
+From 1.6.0, other Veil players see your Veil cape, and you see theirs. This is Veil's only online feature so far.
+
+- **Signing in:** the mod proves who you are with the key Minecraft itself uses for signed chat and your public
+  Mojang profile. Your Minecraft login, password and session token never go to Veil.
+- **What the Veil server stores:** your Minecraft UUID and name, when you first and last signed in, and your cape
+  settings (design, color, animated). A custom `cape.png` never leaves your PC; other players see the Veil design
+  in your color instead. Veil doesn't save your IP address (Cloudflare, which hosts the server, keeps
+  short-lived request logs).
+- **Seeing other capes:** the mod asks the Veil server which of the players around you have a Veil cape, by their
+  Minecraft UUIDs. Nothing is sent to the Minecraft server you play on.
+- **Turning it off:** in the Cape settings, **Share** off stops sharing your cape (and removes it from the server),
+  **Show Others** off stops looking up other players. With Cape off and nothing shared, the mod doesn't sign in.
+- **Deleting your data:** email [thedarkteriyt@gmail.com](mailto:thedarkteriyt@gmail.com) with your Minecraft
+  name and everything stored about you is deleted.
+
+The Veil server runs on Cloudflare at `veil-server.veilclient.workers.dev`.
 
 ### Server rules
 
