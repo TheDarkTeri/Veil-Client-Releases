@@ -48,12 +48,14 @@ A Veil jar from anywhere else may be modified and could steal your account.
 
 ## Features
 
-- **HUD:** FPS, CPS, Coordinates, Keystrokes, Armor Status, Low Durability warning, Saturation, Hotbar Tweaks,
-  Potion Status, Item Counter, Compass, Combo, Reach, Speed, Memory, Pack Display, Ping, Server Address, Clock,
-  Session Stats (kills, finals, beds and wins), Generator Timers (Bedwars), Scoreboard, Boss Bar, Titles,
-  Tab Ping, Bedwars Stats (see below), Screenshot Helper
-- **Player:** Toggle Sprint, Nick Hider, Own Nametag (F5), Cape (other Veil players see it too), Friends (status,
-  messages, invites and public chat; see below), Requeue key, Quick Play menu (Hypixel), Discord Presence (Windows)
+- **HUD:** FPS, CPS, Coordinates, Keystrokes, Armor Status, Low Durability warning, Low Health warning (a red glow
+  when your health is low), Saturation, Hotbar Tweaks, Potion Status, Item Counter, Compass, Combo, Reach, Speed,
+  Memory, Pack Display, Ping, Server Address, Clock, Session Stats (kills, finals, beds and wins), Generator Timers
+  (Bedwars), Team Upgrades (Bedwars: your team's upgrades and trap queue), Scoreboard, Boss Bar, Titles, Tab Ping,
+  Bedwars Stats (see below), Screenshot Helper
+- **Player:** Toggle Sprint, Toggle Sneak, Raw Input (reads your mouse directly for smoother aim), Nick Hider,
+  Own Nametag (F5), Cape (other Veil players see it too), Friends (status, messages, invites and public chat; see
+  below), Requeue key, Quick Play menu (Hypixel), Discord Presence (Windows)
 - **Chat:** Name Mentions, Timestamps, Compact Chat, Chat Tweaks, Chat Tabs (All, Party, Guild, PMs), Auto GG
 - **World:** Fullbright, Time Changer, Weather Changer, Waypoints
 - **Render:** Zoom, Custom Crosshair, 1.7 Animations, Block Outline, Hit Color, Hitboxes, Item Physics,
