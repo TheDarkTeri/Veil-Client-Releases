@@ -44,7 +44,7 @@ A Veil jar from anywhere else may be modified and could steal your account.
 - **Edit HUD** lets you drag, snap and resize everything on your screen.
 - **Profiles** keep separate setups, for example one for Bedwars and one for Skywars.
 - **Social** (in the Esc menu and on the main menu, or a key you set in Controls) has public chat for everyone on
-  Veil, your Veil friends and your messages.
+  Veil, your Veil friends and messages, and the other Veil players on the server you're on.
 
 ## Features
 
@@ -52,20 +52,24 @@ A Veil jar from anywhere else may be modified and could steal your account.
   when your health is low), Saturation, Hotbar Tweaks, Potion Status, Item Counter, Compass, Combo, Reach, Speed,
   Memory, Pack Display, Ping, Server Address, Clock, Session Stats (kills, finals, beds and wins), Generator Timers
   (Bedwars), Team Upgrades (Bedwars: your team's upgrades and trap queue), Scoreboard, Boss Bar, Titles, Tab Ping,
-  Bedwars Stats (see below), Screenshot Helper
+  Hypixel Stats (Bedwars and Skywars stats in the tab list, see below), Screenshot Helper
 - **Player:** Toggle Sprint, Toggle Sneak, Raw Input (reads your mouse directly for smoother aim), Nick Hider,
-  Own Nametag (F5), Cape (other Veil players see it too), Friends (status, messages, invites and public chat; see
-  below), Requeue key, Quick Play menu (Hypixel), Discord Presence (Windows)
-- **Chat:** Name Mentions, Timestamps, Compact Chat, Chat Tweaks, Chat Tabs (All, Party, Guild, PMs), Auto GG
+  Own Nametag (F5), Cape (other Veil players see it too), Veil Badges (a Veil icon next to other Veil players'
+  names), Friends (status, messages, invites and public chat; see below), Requeue key, Quick Play menu (Hypixel),
+  Discord Presence (Windows)
+- **Chat:** Chat Heads (the sender's face in front of their messages), Name Mentions, Timestamps, Compact Chat,
+  Chat Tweaks, Chat Tabs (All, Party, Guild, PMs), Auto GG
 - **World:** Fullbright, Time Changer, Weather Changer, Waypoints
 - **Render:** Zoom, Custom Crosshair, 1.7 Animations, Block Outline, Hit Color, Hitboxes, Item Physics,
   Enchant Glint, No Hurt Cam, Motion Blur, Particles, Menu Blur, Menu Music, Performance
 - A custom red-and-black main menu, pause menu and menu backgrounds
 
-### Bedwars Stats and your Hypixel API key
+### Hypixel Stats and your Hypixel API key
 
-Bedwars Stats shows stars, FKDR and WLR next to names in the tab list on Hypixel. It needs **your own** API key
-from [developer.hypixel.net](https://developer.hypixel.net), which requires a Minecraft account linked to Hypixel.
+Hypixel Stats shows stats next to names in the tab list on Hypixel: Bedwars stars, FKDR and WLR in Bedwars, and
+Skywars level, KDR and WLR in Skywars (**Elsewhere** picks what to show in other places). It was called Bedwars
+Stats before 1.10.0; your key and settings carry over. It needs **your own** API key from
+[developer.hypixel.net](https://developer.hypixel.net), which requires a Minecraft account linked to Hypixel.
 
 **Use it at your own risk.** Hypixel's rules say development keys are meant for your own projects, so Hypixel may
 revoke a key used in a mod like this. Only your key is affected, not your Minecraft or Hypixel account. Never share
@@ -73,8 +77,9 @@ your key with anyone, and nobody from Veil will ever ask for it.
 
 ### Online features and your data
 
-Veil has a few online features: shared capes (from 1.6.0), friends, messages and invites (from 1.7.0), and public
-chat (from 1.9.0). They run on the Veil server, which runs on Cloudflare at `veil-server.veilclient.workers.dev`.
+Veil has a few online features: shared capes (from 1.6.0), friends, messages and invites (from 1.7.0), public
+chat (from 1.9.0), and Veil badges (from 1.10.0). They run on the Veil server, which runs on Cloudflare at
+`veil-server.veilclient.workers.dev`.
 
 - **Friends:** add friends by their Minecraft name in **Social** or in the Veil launcher; they need to have used
   Veil once. Friends see when you're online and in game, and with **Show Server** on (Friends settings), which
@@ -92,18 +97,23 @@ chat (from 1.9.0). They run on the Veil server, which runs on Cloudflare at `vei
 - **Blocking:** blocking someone hides their public messages, ends a friendship and stops friend requests both
   ways. Unblock them on Social's Friends tab or in the launcher.
 - **Capes:** other Veil players see your Veil cape and you see theirs. A custom `cape.png` never leaves your PC;
-  others see the Veil design in your color instead. To show capes, the mod asks the Veil server which players
-  around you have one, by their Minecraft UUIDs.
+  others see the Veil design in your color instead.
+- **Badges:** other Veil players see a small Veil icon next to your name (tab list and above your head) if you
+  used Veil in the last 30 days, and you show up in their Social list of Veil players on the server. Turn off
+  **Show Mine** (Veil Badges settings) and nobody sees your badge or finds you in that list.
+- **Looking up players:** to show capes and badges, the mod asks the Veil server which of the players around you
+  and in your tab list use Veil, by their Minecraft UUIDs.
 - **Signing in:** the mod and the launcher prove who you are with the key Minecraft itself uses for signed chat
   and your public Mojang profile. Your Minecraft login, password and session token never go to Veil.
-- **What the Veil server stores:** your Minecraft UUID and name, when you first and last signed in, your cape
-  settings, your friends and friend requests, the players you blocked, messages from the last 30 days, public chat
-  from the last 7 days, reports, and mutes while they last. Whether you're online is never stored. Veil doesn't save your IP address (Cloudflare, which hosts the server, keeps short-lived request
-  logs). Nothing is sent to the Minecraft servers you play on.
+- **What the Veil server stores:** your Minecraft UUID and name, when you first signed in and when you last used
+  Veil, your cape settings, whether you show your badge, your friends and friend requests, the players you
+  blocked, messages from the last 30 days, public chat from the last 7 days, reports, and mutes while they last.
+  Whether you're online is never stored. Veil doesn't save your IP address (Cloudflare, which hosts the server,
+  keeps short-lived request logs). Nothing is sent to the Minecraft servers you play on.
 - **Turning it off:** turn off the **Friends** module to stop connecting for friends, messages and public chat
-  (friends then see you offline, unless the Veil launcher is open). In the Cape settings, **Share** off removes your cape from
-  the server and **Show Others** off stops looking up other players. With Friends off and no cape shared, the mod
-  doesn't connect to Veil at all.
+  (friends then see you offline, unless the Veil launcher is open). In the Cape settings, **Share** off removes
+  your cape from the server and **Show Others** off stops looking up capes; turning off **Veil Badges** stops
+  looking up badges. With all of those off and no cape shared, the mod doesn't connect to Veil at all.
 - **Deleting your data:** email [thedarkteriyt@gmail.com](mailto:thedarkteriyt@gmail.com) with your Minecraft
   name and everything stored about you, friends and messages included, is deleted. Reports and mutes are kept, so
   deleting your data can't be used to get out of them.
